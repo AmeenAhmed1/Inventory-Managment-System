@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="1117.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="Report.ReportDataController">
+   <children>
+      <Pane prefHeight="561.0" prefWidth="1117.0">
+         <children>
+            <Pane layoutX="410.0" prefHeight="155.0" prefWidth="707.0" style="-fx-background-color: #fbf9f8;">
+               <children>
+                  <Pane layoutX="157.0" layoutY="36.0" prefHeight="83.0" prefWidth="197.0" style="-fx-background-color: #32aa9f;">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/import.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="102.0" layoutY="8.0" text="Imports" textFill="WHITE" />
+                        <Label fx:id="lblImports" alignment="CENTER" layoutX="56.0" layoutY="16.0" prefHeight="58.0" prefWidth="132.0" text="50" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="412.0" layoutY="36.0" prefHeight="83.0" prefWidth="197.0" style="-fx-background-color: #32aa9f;">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Export.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="102.0" layoutY="8.0" text="Exports" textFill="WHITE" />
+                        <Label fx:id="lblExports" alignment="CENTER" layoutX="55.0" layoutY="18.0" prefHeight="58.0" prefWidth="132.0" text="50" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane layoutX="410.0" layoutY="167.0" prefHeight="394.0" prefWidth="707.0" style="-fx-background-color: #fbf9f8;">
+               <children>
+                  <TableView fx:id="reportTable" layoutX="427.0" prefHeight="394.0" prefWidth="280.0">
+                    <columns>
+                      <TableColumn fx:id="BarCode" prefWidth="75.0" text="BarCode" />
+                      <TableColumn fx:id="Quantity" prefWidth="75.0" text="Quantity" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <PieChart fx:id="Chart" prefHeight="394.0" prefWidth="428.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="561.0" prefWidth="390.0" style="-fx-background-color: #fbf9f8;">
+               <children>
+                  <Pane layoutX="94.0" layoutY="41.0" prefHeight="83.0" prefWidth="197.0" style="-fx-background-color: #32aa9f;">
+                     <children>
+                        <ImageView fitHeight="56.0" fitWidth="47.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Customer.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="99.0" layoutY="8.0" text="Customers" textFill="WHITE" />
+                        <Label fx:id="lblCustomer" alignment="CENTER" layoutX="61.0" layoutY="17.0" prefHeight="58.0" prefWidth="132.0" text="50" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <ProgressIndicator fx:id="progressMale" layoutX="94.0" layoutY="198.0" prefHeight="83.0" prefWidth="89.0" progress="0.57" />
+                  <ImageView fitHeight="47.0" fitWidth="41.0" layoutX="118.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Male.png" />
+                     </image>
+                  </ImageView>
+                  <ProgressIndicator fx:id="progressFemale" layoutX="202.0" layoutY="198.0" prefHeight="83.0" prefWidth="89.0" progress="0.4" />
+                  <ImageView fitHeight="47.0" fitWidth="41.0" layoutX="226.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Female.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

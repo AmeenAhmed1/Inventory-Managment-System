@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="76.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagmentsystem.MainWindowController">
+   <children>
+      <Pane prefHeight="76.0" prefWidth="755.0">
+         <children>
+            <JFXButton layoutX="286.0" layoutY="13.0" onAction="#btnImports" prefHeight="51.0" prefWidth="83.0" ripplerFill="#fbf9f8" style="-fx-background-color: #32aa9f;" text="Imports" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="378.0" layoutY="13.0" onAction="#btnExports" prefHeight="51.0" prefWidth="83.0" ripplerFill="#fbf9f8" style="-fx-background-color: #32aa9f;" text="Exports" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="471.0" layoutY="13.0" onAction="#btnCustomer" prefHeight="51.0" prefWidth="83.0" ripplerFill="#fbf9f8" style="-fx-background-color: #32aa9f;" text="Customers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="653.0" layoutY="13.0" onAction="#btnLogout" prefHeight="51.0" prefWidth="83.0" ripplerFill="#fbf9f8" style="-fx-background-color: #32aa9f;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="69.0" fitWidth="64.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8_Forumbee_96px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="169.0" layoutY="30.0" text="Welcome, " />
+            <Label fx:id="lbl" layoutX="130.0" layoutY="47.0" prefHeight="10.0" prefWidth="133.0" />
+            <JFXButton layoutX="563.0" layoutY="13.0" onAction="#btnReport" prefHeight="51.0" prefWidth="83.0" ripplerFill="#fbf9f8" style="-fx-background-color: #32aa9f;" text="Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
